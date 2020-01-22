@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:ignore="HardcodedText" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        
+          <TextView
+              android:id="@+id/labelnim"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="7dp"
+              android:text="MENU MAKANAN"
+              android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labelnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelnim"
+            android:layout_marginTop="7dp"
+            android:text="Nama"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fieldnama"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/labelnama"
+            android:layout_below="@+id/labelnim"
+            android:inputType="text" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/labelalmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelnama"
+            android:layout_marginTop="15dp"
+            android:text="Alamat"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fieldalmt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fieldnama"
+            android:layout_toRightOf="@+id/labelalmt"
+            android:inputType="textEmailAddress" >
+        </EditText>
+
+        <RadioGroup
+            android:id="@+id/groupjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/labelalmt"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+       
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/outputnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tomboltampil"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputalmt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputnama"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputahli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputmeja"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/outputjk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputahli"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/outputmeja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/outputalmt"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cekboxsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/cekboxnet"
+            android:text="Nasi + Ayam Bakar"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cekboxnet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cekboxjava"
+            android:layout_below="@+id/cekboxjava"
+            android:text="Nasi + Gulai"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labelkeahlian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cekboxjava"
+            android:layout_below="@+id/groupjk"
+            android:layout_marginTop="51dp"
+            android:text="Menu"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/labelmeja"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/groupjk"
+            android:text="Nomor Meja"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cekboxjava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/labelkeahlian"
+            android:text="Nasi + Ikan Gurameh"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/fieldmeja"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/labelmeja"
+            android:layout_alignBottom="@+id/labelmeja"
+            android:layout_toRightOf="@+id/labelmeja"
+            android:ems="10"
+            android:inputType="textEmailAddress" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/tomboltampil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cekboxsa"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp"
+            android:text="PESAN"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</ScrollView>
